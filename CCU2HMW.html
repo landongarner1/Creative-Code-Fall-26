@@ -1,0 +1,70 @@
+require("L5")
+
+function setup()
+  size(400, 400)
+
+  -- Set the program title
+  windowTitle("Basic sketch")
+
+  describe('Draws a yellow background')
+end
+
+function draw()
+  -- Fills the background with the color yellow
+  background(135, 206, 235)
+fill(255, 223, 34)
+circle(75, 75, 100)
+  fill(255, 223, 34)
+fill(254, 243, 199)
+--buildings
+ rect(0, height*0.6, width*0.2,height*0.4)
+ rect(80, height*0.4, width*0.2,height*0.6)
+ rect(160, height*0.5, width*0.2,height*0.5)
+ rect(240, height*0.7, width*0.2,height*0.4)
+ rect(320, height*0.6, width*0.2,height*0.4)
+--windows
+fill(200, 225, 245)
+--first building
+rect(6, height*0.65, width*0.05,height*0.08)
+rect(6, height*0.8, width*0.05,height*0.08)
+rect(6, height*0.95, width*0.05,height*0.08)
+rect(46, height*0.65, width*0.05,height*0.08)
+rect(46, height*0.8, width*0.05,height*0.08)
+rect(46, height*0.95, width*0.05,height*0.08)
+--second buillding
+rect(90, height*0.45, width*0.05,height*0.08)
+rect(90, height*0.6, width*0.05,height*0.08)
+rect(90, height*0.75, width*0.05,height*0.08)
+rect(90, height*0.9, width*0.05,height*0.08)
+rect(130, height*0.45, width*0.05,height*0.08)
+rect(130, height*0.6, width*0.05,height*0.08)
+rect(130, height*0.75, width*0.05,height*0.08)
+rect(130, height*0.9, width*0.05,height*0.08)
+--third building
+rect(170, height*0.55, width*0.05,height*0.08)
+rect(170, height*0.7, width*0.05,height*0.08)
+rect(170, height*0.85, width*0.05,height*0.08)
+rect(170, height*0.99, width*0.05,height*0.08)
+rect(210, height*0.55, width*0.05,height*0.08)
+rect(210, height*0.7, width*0.05,height*0.08)
+rect(210, height*0.85, width*0.05,height*0.08)
+rect(210, height*0.99, width*0.05,height*0.08)
+--fourth building
+rect(250, height*0.75, width*0.05,height*0.08)
+rect(250, height*0.9, width*0.05,height*0.08)
+rect(290, height*0.75, width*0.05,height*0.08)
+rect(290, height*0.9, width*0.05,height*0.08)
+
+--fifth building
+rect(330, height*0.65, width*0.05,height*0.08)
+rect(330, height*0.8, width*0.05,height*0.08)
+rect(330, height*0.95, width*0.05,height*0.08)
+rect(370, height*0.65, width*0.05,height*0.08)
+rect(370, height*0.8, width*0.05,height*0.08)
+rect(370, height*0.95, width*0.05,height*0.08)
+rect(mouseX, mouseY, width / 20, height / 15)
+fill(0)
+text("X: "..mouseX.."  Y: "..mouseY, mouseX+5,mouseY+30)
+end
+
+  
